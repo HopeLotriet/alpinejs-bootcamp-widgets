@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 class="title">AlpineJS widgets for Bootcamp functions</h1>
+    <hr>
+
+    <h3>Greet Function</h3>
+    <h5>Greeting Message with a multiple language support</h5>
+
+
+    <div class="greet" x-data="{ greet: greet }">
+
+        <div x-data="greetings()">
+
+            <div class="box" x-text="greets"></div>
+          <br>
+          <label for="Name">Enter Name:</label>
+          <input type="text" x-model="name">
+          <button class="button" x-on:click="showGreet()">Greet</button>
+    <br>
+    <br>
+          <div class="language">
+          <select x-model="language">
+            <option value="">Select Language</option>
+            <option value="English">English</option>
+            <option value="IsiZulu">IsiZulu</option>
+            <option value="Spanish">Spanish</option>
+            <option value="French">French</option>
+            <option value="Arabic">Arabic</option>
+            <option value="Swahili">Swahili</option>
+            <option value="Igbo">Igbo</option>
+          </select>
+          </div>
+    
+        </div>
+      </div>
+    
+        <br>
+    
+
+    <hr>
+
+    <h3>Transport Fee Function</h3>
+    <h5>Shift Fee</h5>
+    <div class="transportFee">
+
+        <div x-data="data">
+
+            <label>
+                <input type="radio" name="shift" x-model="shift" value="morning" @click="transportFees"> Morning Shift
+            </label>
+
+            <label>
+                <input type="radio" name="shift" x-model="shift" value="afternoon" @click="transportFees"> Afternoon Shift
+            </label>
+
+            <label>
+                <input type="radio" name="shift" x-model="shift" value="nightshift" @click="transportFees"> Night Shift
+            </label>
+
+            <div x-show="open">
+                <p class="box">The <span x-text="shift"></span> transport fee is <span x-text="fee"></span>. </p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <br>
+    <hr>
+
+
+    <h3>Enough Airtime Function</h3>
+    <h5>Projected Usage and Amount of Airtime Available</h5>
+    <div class="airtime" x-data="enoughAirtime">
+
+        <div>
+            <label for="usage">Projected usage: </label>
+            <input type="text" x-model="projectedUsage" id="usage">
+        </div>
+        <br>
+        <div>
+            <label for="airtime">Airtime available: </label>
+            <input type="text" x-model="airtimeAvailable" id="airtime">
+        </div>
+
+        <div x-show="airtimeMessage.length > 0" class="box" x-text="airtimeMessage">
+        </div>
+        <div>
+            <button class="button" x-on:click="calculate()">Airtime usage</button>
+        </div>
+
+    </div>
+    </div>
+
+    <hr>
+
+
+    <h3>Total Phone Bill Function</h3>
+    <h5>Total Phone Bill Usage</h5>
+    <div class="bill">
+        <div>
+
+            <div x-data="totalPhoneBill">
+
+                <label>
+
+                    <input value="phoneUsage" type="text" x-model="phone">
+                </label>
+                <div class="box" x-show="totalBill.length > 0" x-text="totalBill"> </div>
+                <button class="button" x-on:click="calculateTotalUsage">Total phone bill</button>
+            </div>
+            <br>
+        </div>
+
+
+
+        <script src="greet.js" defer></script>
+        <script src="Widgets/transportFeeWidget.js" defer></script>
+        <script src="Functions/transportFee.js" defer></script>
+        <script src="enoughAirtime.js" defer></script>
+        <script src="totalPhoneBill.js" defer></script>
+        <script src="//unpkg.com/alpinejs" defer></script>
+
+</body>
+
+</html>

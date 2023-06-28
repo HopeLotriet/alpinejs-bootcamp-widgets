@@ -1,0 +1,60 @@
+body{
+    background-color: #b6efee;
+    
+}
+
+.title{
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+.box {
+    border: 2px solid black;
+    border-radius: 0.5em;
+    padding: 1em;
+    margin-right: 60em;
+    background-color: antiquewhite;
+
+}
+
+.greet {
+    border: 2px solid black;
+    border-radius: 0.5em;
+    padding: 1em;
+    margin: auto;
+    
+}
+
+.transportFee {
+    border: 2px solid black;
+    border-radius: 0.5em;
+    padding: 1em;
+    margin: auto;  
+}
+
+.airtime {
+    border: 2px solid black;
+    border-radius: 0.5em;
+    padding: 1em;
+    margin: auto; 
+}
+
+.bill{
+    border: 2px solid black;
+    border-radius: 0.5em;
+    padding: 1em;
+    margin: auto;  
+}
+
+.button{
+    background-color: #555555;
+    border: none;
+    color: white;
+    border-radius: 0.5em;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
