@@ -6,10 +6,13 @@ function totalPhoneBill(phoneBill){
       if (callOrSms === "call"){
         total = total + 2.75;
           }
-      else {
+      else if (callOrSms==="sms"){
         total = total + 0.65;
   }
-    }
+  else { return "Error: Can only accept calls and smses";
+}
+ 
+}
     return "R" + total.toFixed(2);
   }
 

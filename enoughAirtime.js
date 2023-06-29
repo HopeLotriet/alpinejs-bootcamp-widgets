@@ -12,7 +12,8 @@ function enoughAirtime(projectedUsage, airtimeAvailable){
        else if (projectedUsageTrimmed.startsWith("sms")){
         totalCost += 0.75;
        }
-      
+       else {return "Error: Can only accept calls, smses or data"
+       }
     }
       var airtimeLeft = airtimeAvailable-totalCost;
       if(airtimeLeft > 0){

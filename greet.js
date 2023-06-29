@@ -12,7 +12,8 @@ function greet(name, language) {
     let greets = greetMe[language];
     if (!greets) {
       greets = "Hello";
-    }
+    };
+    
 
     return greets + ", " + name;
   }
@@ -30,7 +31,7 @@ function greet(name, language) {
           this.name = "";
           this.language = "";
           this.greets = "";
-        }, 3000);
+        }, 5000);
       }
     };
   }
