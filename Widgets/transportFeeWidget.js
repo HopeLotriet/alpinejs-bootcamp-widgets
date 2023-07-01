@@ -13,7 +13,7 @@ document.addEventListener('alpine:init', () => {
                 this.shift = '',
                     this.fee = '',
                     this.open = false
-            }, 3000);
+            }, 10000);
         }
     }))
 })

@@ -31,7 +31,7 @@ function greet(name, language) {
           this.name = "";
           this.language = "";
           this.greets = "";
-        }, 5000);
+        }, 10000);
       }
     };
   }

@@ -31,7 +31,7 @@ function totalPhoneBill(phoneBill){
                setTimeout(() => {
                 this.totalBill = '',
                 this.phone = ''
-               }, 3000);
+               }, 10000);
             }
         }
     });

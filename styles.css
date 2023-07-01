@@ -12,38 +12,43 @@ body{
     border: 2px solid black;
     border-radius: 0.5em;
     padding: 1em;
-    margin-right: 60em;
     background-color: antiquewhite;
-
+    margin-left: 10em;
+    margin-right: 10em;
 }
 
-.greet {
-    border: 2px solid black;
+.block_one {
+    border: 2px solid rgb(173, 177, 54);
     border-radius: 0.5em;
     padding: 1em;
-    margin: auto;
-    
+    flex: 1;
+    margin: 0.5em;
 }
 
-.transportFee {
-    border: 2px solid black;
+
+
+.block_two {
+    border: 2px solid rgb(173, 177, 54);
     border-radius: 0.5em;
     padding: 1em;
-    margin: auto;  
+    flex: 1;
+    margin: 0.5em;
 }
 
-.airtime {
-    border: 2px solid black;
+.block_three {
+    border: 3px solid rgb(173, 177, 54);
     border-radius: 0.5em;
     padding: 1em;
-    margin: auto; 
+    flex: 1;
+    margin: 0.5em;
 }
 
-.bill{
-    border: 2px solid black;
+.block_four {
+    border: 3px solid rgb(173, 177, 54);
     border-radius: 0.5em;
     padding: 1em;
-    margin: auto;  
+    flex: 1;
+    margin: 0.5em;
 }
 
 .button{
@@ -51,10 +56,21 @@ body{
     border: none;
     color: white;
     border-radius: 0.5em;
-    padding: 5px 10px;
+    padding: 10px 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 
+}
+
+.top{display: flex;
+    text-align: center;
+    
+    
+}
+
+.bottom{display: flex;
+    text-align: center;
+    
 }

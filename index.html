@@ -10,21 +10,20 @@
 
 <body>
 
+    
     <h1 class="title">AlpineJS widgets for Bootcamp functions</h1>
     <hr>
-
+    <div class="top"> 
+<div class="block_one" x-data="{ greet: greet }">
     <h3>Greet Function</h3>
     <h5>Greeting Message with a multiple language support</h5>
-
-
-    <div class="greet" x-data="{ greet: greet }">
 
         <div x-data="greetings()">
 
             <div class="box" x-text="greets"></div>
           <br>
           <label for="Name">Enter Name:</label>
-          <input type="text" x-model="name">
+          <input type="text" x-model="name" placeholder="e.g Musawenkosi">
           <button class="button" x-on:click="showGreet()">Greet</button>
     <br>
     <br>
@@ -44,14 +43,12 @@
         </div>
       </div>
     
-        <br>
-    
-
-    <hr>
-
+   
+    <br>
+    <div class="block_two">
     <h3>Transport Fee Function</h3>
     <h5>Shift Fee</h5>
-    <div class="transportFee">
+   
 
         <div x-data="data">
 
@@ -59,72 +56,75 @@
                 <input type="radio" name="shift" x-model="shift" value="morning" @click="transportFees"> Morning Shift
             </label>
 
+            
             <label>
                 <input type="radio" name="shift" x-model="shift" value="afternoon" @click="transportFees"> Afternoon Shift
             </label>
-
+            
             <label>
                 <input type="radio" name="shift" x-model="shift" value="nightshift" @click="transportFees"> Night Shift
             </label>
-
+        
+            <br>
+            
             <div x-show="open">
                 <p class="box">The <span x-text="shift"></span> transport fee is <span x-text="fee"></span>. </p>
             </div>
         </div>
 
     </div>
+</div>
+   
 
-
-
-
-    <br>
     <hr>
-
-
+<div class="bottom">
+    <div class="block_three" x-data="enoughAirtime">
     <h3>Enough Airtime Function</h3>
     <h5>Projected Usage and Amount of Airtime Available</h5>
-    <div class="airtime" x-data="enoughAirtime">
+    
 
         <div>
             <label for="usage">Projected usage: </label>
-            <input type="text" x-model="projectedUsage" id="usage">
+            <input type="text" x-model="projectedUsage" id="usage" placeholder="call, sms or data">
         </div>
         <br>
         <div>
             <label for="airtime">Airtime available: </label>
-            <input type="text" x-model="airtimeAvailable" id="airtime">
+            <input type="text" x-model="airtimeAvailable" id="airtime" placeholder="e.g. 5, 10, 15, etc.,">
         </div>
 
         <div x-show="airtimeMessage.length > 0" class="box" x-text="airtimeMessage">
         </div>
+        <br>
         <div>
             <button class="button" x-on:click="calculate()">Airtime usage</button>
         </div>
 
     </div>
-    </div>
+    
 
-    <hr>
-
-
+    
+  <div class="block_four">
     <h3>Total Phone Bill Function</h3>
     <h5>Total Phone Bill Usage</h5>
-    <div class="bill">
+  
         <div>
 
             <div x-data="totalPhoneBill">
 
                 <label>
 
-                    <input value="phoneUsage" type="text" x-model="phone">
+                    <input value="phoneUsage" type="text" x-model="phone" placeholder="call, sms">
                 </label>
                 <div class="box" x-show="totalBill.length > 0" x-text="totalBill"> </div>
                 <button class="button" x-on:click="calculateTotalUsage">Total phone bill</button>
             </div>
-            <br>
+        
         </div>
-
-
+    </div>
+    </div>
+    
+<hr>
 
         <script src="greet.js" defer></script>
         <script src="Widgets/transportFeeWidget.js" defer></script>

@@ -45,7 +45,7 @@ function enoughAirtime(projectedUsage, airtimeAvailable){
                       this.airtimeUsage = '',
                       this.availableAirtime = '',
                       this.airtimeMessage = ''
-                     }, 5000);
+                     }, 10000);
   
               }
           }
